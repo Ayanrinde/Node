@@ -9,11 +9,11 @@
     <h1>HELLO DASHBOARD</h1>
 
     <div>
-        <%= users.map((user)=>{%>
+        <% users.forEach((user) => { %>
             <h1><%= user.firstName %></h1>
             <p><%= user.lastName %></p>
             <p><%= user.email %></p>
-        <%}) %>
+        <% }) %>
     </div>
 </body>
 </html>
